@@ -9,6 +9,11 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.10.0",
+    "@nuxt/ui": "^2.12.0",
     "nuxt": "^3.9.1"
+  },
+  "dependencies": {
+    "@auth/core": "^0.20.0",
+    "@hebilicious/authjs-nuxt": "^0.3.5"
   }
 }
