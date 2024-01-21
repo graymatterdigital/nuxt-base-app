@@ -1,7 +1,26 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  /* imports: {
+    presets: [
+      {
+        from: 'qrcode.vue',
+        imports: ['QrcodeVue']
+      }
+    ]
+  }, */
   devtools: { enabled: true },
-  modules: ['@nuxt/content', "@nuxt/ui","@hebilicious/authjs-nuxt"],
+  modules: [
+    '@nuxt/content',
+    "@nuxt/ui",
+    "@nuxtjs/color-mode",
+    "@hebilicious/authjs-nuxt",
+    "nuxt-lodash",
+    "@vueuse/nuxt",
+    "@nuxt/image"
+  ],
+  content: {
+    documentDriven: true,
+  },
   /* authJs: {
     verifyClientOnEveryRequest: false,
     guestRedirectTo: "/about", // where to redirect if the user is not authenticated
