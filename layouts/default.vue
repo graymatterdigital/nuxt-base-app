@@ -1,6 +1,5 @@
 <script setup lang="ts">
-  const { navigation, page } = useContent()
-  useSet(navigation.value, 'to', page.value._path)
+  //const { navigation } = useContent()
   /* const links = [{
     label: 'Profile',
     avatar: {
@@ -25,7 +24,7 @@
   <UContainer>
     <div class="grid grid-cols-4 gap-4">
         <div class="col-span-1">
-            {{ console.log(navigation.value) }}
+            <NavBar />
             <!--ContentNavigation v-slot="{ navigation }">
                 <UVerticalNavigation :links="navigation" />
             </ContentNavigation-->
