@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     "@nuxt/ui",
     "@nuxtjs/color-mode",
+    "@nuxtjs/i18n",
+    "@nuxtjs/seo",
     "@hebilicious/authjs-nuxt",
     "nuxt-lodash",
     "@vueuse/nuxt",
@@ -20,6 +22,13 @@ export default defineNuxtConfig({
   ],
   content: {
     documentDriven: true,
+  },
+  i18n: {
+    baseUrl: 'http://localhost:3000',
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', iso: 'en-US' },
+    ],
   },
   /* authJs: {
     verifyClientOnEveryRequest: false,
