@@ -7,7 +7,7 @@
       <NavBar />
     </div>
     <div class="col-span-2">
-      <ContentDoc />
+      <slot />
     </div>
     <div class="col-span-1">
       <slot name="right" />
