@@ -1,4 +1,5 @@
 ---
+
 navigation:
     label: 'Home'
     icon: 'i-heroicons-home'

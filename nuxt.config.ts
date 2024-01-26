@@ -20,8 +20,10 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image"
   ],
-  content: {
-    documentDriven: true,
+  content: { 
+    documentDriven: {
+      injectPage: false,
+    }
   },
   i18n: {
     baseUrl: 'http://localhost:3000',
@@ -30,12 +32,6 @@ export default defineNuxtConfig({
       { code: 'en', iso: 'en-US' },
     ],
   },
-  /* authJs: {
-    verifyClientOnEveryRequest: false,
-    guestRedirectTo: "/about", // where to redirect if the user is not authenticated
-    authenticatedRedirectTo: "/", // where to redirect if the user is authenticated
-    baseUrl: "http://localhost:3000" // should be something like https://www.my-app.com
-  }, */
   runtimeConfig: {
     authJs: {
       secret: process.env.NUXT_NEXTAUTH_SECRET // You can generate one with `openssl rand -base64 32`

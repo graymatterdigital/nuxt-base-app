@@ -1,9 +1,11 @@
 <script setup lang="ts">
-const { toc } = useContent()
-const activeHeading = ref(null)
+const props = defineProps(['toc'])
 
+ 
 onMounted(async () => {
-
+  console.log(props.toc)
+})
+/*
   watch(toc, () => {
     toc.links.forEach((link, index) => {
       const observer = useIntersectionObserver(
@@ -18,11 +20,11 @@ onMounted(async () => {
       observer.start(document.getElementById(link.id))
     })
   })
-})
+}) */
 </script>
 
 <template>
-  <div>
+  <!--div>
     <ul v-if="toc && toc.links">
       <li v-for="link in toc.links" :key="link.text">
         <a :href="`#${link.id}`" :class="{ active: activeHeading === link.id }">
@@ -30,5 +32,5 @@ onMounted(async () => {
         </a>
       </li>
     </ul>
-  </div>
+  </div-->
 </template>
