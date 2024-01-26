@@ -5,7 +5,9 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@nuxt/content": "^2.10.0",
@@ -13,9 +15,22 @@
     "@nuxt/ui": "^2.12.0",
     "@nuxtjs/i18n": "^8.0.0",
     "@nuxtjs/seo": "^2.0.0-rc.5",
+    "@nuxtjs/storybook": "7.0.0",
     "@vueuse/nuxt": "^10.7.2",
     "nuxt": "^3.9.1",
-    "nuxt-lodash": "^2.5.3"
+    "nuxt-lodash": "^2.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "7.6.7",
+    "@types/node": "^18.17.5",
+    "@storybook/vue3": "7.6.7",
+    "@storybook-vue/nuxt": "0.2.1",
+    "@storybook/addon-links": "7.6.7",
+    "@storybook/builder-vite": "7.6.7",
+    "@storybook/addon-essentials": "7.6.7",
+    "@storybook/addon-interactions": "7.6.7",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/blocks": "7.6.7"
   },
   "dependencies": {
     "@auth/core": "^0.20.0",
