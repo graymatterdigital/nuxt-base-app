@@ -9,3 +9,4 @@ node_modules
 dist
 nuxt-layer
 inventory-app-layer
+dx-layer

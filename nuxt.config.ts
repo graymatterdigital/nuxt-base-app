@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: [
+    
+    './dx-layer',
     './nuxt-layer',//my-ui-layer
   ],
   /* imports: {
