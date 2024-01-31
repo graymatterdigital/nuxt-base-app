@@ -48,5 +48,6 @@
             "italic": false
         }
     ],
-    "better-comments.highlightPlainText": true
+    "better-comments.highlightPlainText": true,
+    "todo-tree.tree.showBadges": true
 }

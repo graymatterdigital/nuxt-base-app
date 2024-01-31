@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  extends: [
+    './nuxt-layer',//my-ui-layer
+  ],
   /* imports: {
     presets: [
       {
@@ -8,36 +11,49 @@ export default defineNuxtConfig({
       }
     ]
   }, */
-  devtools: { enabled: true },
+  app: {
+    // TODO: Customize transistions between pages and layouts
+    pageTransition: {
+      name: 'fade',
+      mode: 'out-in' // default
+    },
+    layoutTransition: {
+      name: 'slide',
+      mode: 'out-in' // default
+    }
+  },
+  devtools: { enabled: false },
   modules: [
-    '@nuxtjs/storybook',
-    '@nuxt/content',
+    //"@nuxtjs/storybook",
+    "@nuxt/content",
     "@nuxt/ui",
     "@nuxtjs/color-mode",
-    "@nuxtjs/i18n",
-    "@nuxtjs/seo",
+    //"@nuxtjs/i18n",
+    //"@nuxtjs/seo",
     "@hebilicious/authjs-nuxt",
     "nuxt-lodash",
     "@vueuse/nuxt",
-    "@nuxt/image"
+    "@nuxt/image",
   ],
-  storybook: {
+  /* storybook: {
+    enabled: false,
     url: 'http://localhost:6006',
     storybookRoute: '/__storybook__',
     port: 6006,
-  },
+  }, */
   content: { 
     documentDriven: {
       injectPage: false,
     }
   },
-  i18n: {
+  /* i18n: {
+    enabled: false,
     baseUrl: 'http://localhost:3000',
     defaultLocale: 'en',
     locales: [
       { code: 'en', iso: 'en-US' },
     ],
-  },
+  }, */
   runtimeConfig: {
     authJs: {
       secret: process.env.NUXT_NEXTAUTH_SECRET // You can generate one with `openssl rand -base64 32`

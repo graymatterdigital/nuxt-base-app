@@ -1,16 +1,6 @@
 {
 	"files": [
 		{
-			"path": "app.vue",
-			"bookmarks": [
-				{
-					"line": 1,
-					"column": 1,
-					"label": "Application Entry Point"
-				}
-			]
-		},
-		{
 			"path": "layouts/default.vue",
 			"bookmarks": [
 				{

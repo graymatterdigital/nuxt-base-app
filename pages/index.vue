@@ -1,6 +1,6 @@
 <script setup>
-
+// TODO: Figure out how to best format the initial landing page
 </script>
 <template>
-    <ContentSlot :use="$slots.default" unwrap="p" />
+    
 </template>

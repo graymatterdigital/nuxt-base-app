@@ -6,6 +6,8 @@ onMounted(async () => {
   console.log(props.toc)
 })
 /*
+TODO: planning on implementing this utilizing the useElementVisibility composable from @vueuse/core 
+ 
   watch(toc, () => {
     toc.links.forEach((link, index) => {
       const observer = useIntersectionObserver(
